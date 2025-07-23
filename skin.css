@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    font-family: Helvetica, sans-serif;
+    color: black;
+    scrollbar-width: none;
+}
+
+body,
+html {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.column {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.column::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    width: 100%;
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+
+.textbox {
+    position: absolute;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    font-size: 16.5px;
+    width: 50%;
+}
+
+.contact,
+.instructions,
+.textbox p {
+    padding: 0px 2rem;
+}
+
+.contact {
+    margin: auto;
+    padding: 0px;
+}
+
+.arrow {
+    font-weight: bold;
+    font-size: 25px;
+    height: 100%;
+}
+
+.instructions {
+    display: flex;
+    gap: .8rem;
+}
+
+@media screen and (max-width: 600px) {
+    .textbox {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .instructions {
+        display: none;
+    }
+}
